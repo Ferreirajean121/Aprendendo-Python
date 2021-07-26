@@ -1,0 +1,87 @@
+m2=[ [5,6] , [7,8] ] # matriz tipo 2x2 (2 linhas e 2 colunas)
+
+print(m2)
+print(m2[0][0]) # índices da matriz
+print(m2[0][1])
+print(m2[1][0])
+print(m2[1][1])
+
+m2[0][0] = 9 # mudando valores na matriz
+m2[1][0] = 2
+print(m2)
+
+Exemplo 2:
+
+m2=[ ['Arthur', 21] , ['Joana', 23] ] # matriz tipo 2x2
+print(m2)
+
+m2[0][1] = 25 # mudando valores na matriz
+m2[1][0] = 3550
+print(m2)
+
+m2[0][0] = ‘Marta’ # mudando valores na matriz
+m2[1][1] = 75
+print(m2)
+
+Exemplo 3:
+
+m2 = [ [1,2] , [3,4] , [5,6] , [7,8] ] # matriz tipo 4x2 (4 linhas e 2 colunas)
+for x in m2: # imprime a matriz em linhas e colunas
+ print(x)
+
+for linha in m2:
+ for x in linha: # imprime elemento a elemento da matriz
+ print(x)
+
+Preenchendo uma matriz tipo 2x2 (carga na matriz)
+
+m2 = [ [0,0] , [0,0] ]
+
+for linha in range(0,2): # vai de 0 a 1 (2 repetições)
+ for coluna in range(0,2): # vai de 0 a 1 (2 repetições)
+ m2[linha][coluna] = int(input("Entre com um valor inteiro ... "))
+
+print(m2)
+
+matriz tipo 3x3 (3 linhas e 3 colunas)
+
+m3=[ [1,2,3] , [4,5,6] , [7,8,9] ] 
+
+print(m3)
+print(m3[1][1]) # índices da matriz
+print(m3[0][2])
+print(m3[1][0])
+
+m3[1][0] = 25 # mudando valores na matriz
+m3[2][1] = 33
+m3[0][0] = m3[1][1]+m3[2][2]
+m3[0][1] = m3[1][0]+m3[1][2]
+print(m3)
+
+preeenchendo uma matriz tipo 3x3 (carga na matriz)
+
+m3=[ [0,0,0] , [0,0,0] , [0,0,0] ]
+
+for linha in range(0,3): # vai de 0 a 2 (3 repetições)
+for coluna in range(0,3): # vai de 0 a 2 (3 repetições)
+m3[linha][coluna] = int(input("Entre com um valor inteiro ... "))
+
+print("Matriz 3X3 gerada")
+print(m3)
+
+print(m3[0][1])
+print(m3[1][2])
+print(m3[2][1])
+
+Exemplo 2:
+
+m3=[ [0,0,0] , [0,0,0] , [0,0,0] ]
+
+for linha in range(0,3): # vai de 0 a 2 (3 repetições)
+ m3[linha][0] = input("Entre com o nome do cliente ... ")
+ m3[linha][1] = input("Entre com o telefone do cliente ... ")
+ m3[linha][2] = input("Entre com o bairro do cliente ... ")
+
+print("Matriz 3X3 gerada")
+print(m3)
+

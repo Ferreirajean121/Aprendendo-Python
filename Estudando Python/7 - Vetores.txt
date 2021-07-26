@@ -1,0 +1,72 @@
+Digite e analise os comandos abaixo no IDLE
+
+listanomes = [“João”, “Patricia”, “Débora”]
+
+print(listanomes[1])
+print(listanomes[0])
+listanomes.append(“Mariana”)
+
+print(listanomes)
+listanomes.insert(1, “Emerson”)
+
+print(listanomes)
+listanomes.append(“Fabiana”)
+
+print(listanomes)
+listanomes.remove(“João”)
+
+print(listanomes)
+listanomes.insert(2, “Isadora”)
+
+print(listanomes)
+listanomes.clear() ---> limpa a lista
+
+Digite no IDLE:
+
+print(listanomes)
+X = listanomes.count(“João”) 
+
+print(X)
+X = listanomes.count(“Patricia”)
+
+print(X)
+
+lista = [5, 7, 4, 6, 8, 9, 15, 10]
+
+sorted(lista)
+
+lista.sort() lista.reverse() lista.pop(2)
+print(lista) print(lista) print(lista)
+
+frutas = [‘Banana’, ‘Laranja’, ‘Abacate’, ‘Melancia’, ‘Melão’, ‘Pera’]
+
+sorted(frutas)
+frutas.sort()
+
+print(frutas)
+frutas.reverse()
+
+print(frutas)
+frutas.pop(1)
+
+print(frutas)
+frutas 2 = frutas
+
+frutas.append(‘Maçã’)
+frutas.append(‘Uva’)
+
+print(frutas)
+print(frutas2)
+
+>>> pares = [2,4,6,8,10,12,14,16,18,20,22,24,26,28,30] 
+
+>>> pares[0]
+>>> pares[4:7]
+>>> pares[:5]
+>>> pares[10:]
+>>> pares[3]
+>>> pares[3:9]
+>>> pares[:8]
+>>> pares[6:]
+>>> del pares[2]
+>>> del pares[1:3]

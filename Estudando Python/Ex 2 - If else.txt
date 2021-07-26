@@ -1,0 +1,54 @@
+Desenvolver um programa em python que o usuário entre com a idade do carro
+e caso a idade seja menor ou igual a 3 anos imprima “Seu carro ainda é novo”,
+caso contrário “Seu carro é velho”.
+
+idade = int(input("Digite a idade do carro 'em anos': "))
+
+if idade <= 3:
+ print("Seu carro ainda é novo")
+else:
+ print("Seu carro é velho“)
+
+Desenvolver um programa em python que informe se uma pessoa é maior de
+idade (base 18 anos) e se é alta ou baixa (base 1,50m).
+
+idade = int(input("Digite a idade de uma pessoa : "))
+
+altura = float(input("Digite a altura de uma pessoa : "))
+
+if idade >= 18:
+ print("Maior de idade")
+else:
+ print("Menor de idade")
+if altura > 1.50:
+ print("Pessoa alta")
+else:
+ print("Pessoa baixa“)
+
+
+Desenvolver um programa em python que faça o cálculo do IMC de uma pessoa com suas faixas.
+# cálculo do IMC com opção de sair do sistema e com faixas do resultado do IMC
+print("Cálculo do IMC com suas faixas")
+
+op='N'
+while op != "S" and op != "s": 
+
+ nome=input("Digite o nome da pessoa :") # entrada de dados
+ altura=float(input("Digite a altura :"))
+ peso=float(input("Digite o peso :"))
+ IMC = peso / (altura*altura) # processamento
+
+ print("Resultado do Cálculo do IMC")
+ print(nome , " seu IMC é : ", "%.2f" %IMC) # saída de dados
+
+ if IMC < 18.5: # faixas do IMC
+ print("Magro")
+ elif IMC >= 18.5 and IMC <= 24.9:
+ print("Peso normal")
+ elif IMC > 24.9 and IMC <= 29.9:
+ print("Sobrepeso")
+ elif IMC > 29.9 and IMC <= 39.9:
+ print("Obeso")
+ else:
+ print("Obesidade Grave")
+ op = input("Digite 'S' para sair do sistema“) # opção de saída do sistema

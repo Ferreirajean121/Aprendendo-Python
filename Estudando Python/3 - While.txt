@@ -1,0 +1,88 @@
+Programa que imprime a tabuada de um número digitado
+(estrutura de repetição)
+num = int(input("Digite o número da tabuada desejada : "))
+x=0
+while x <= 10:
+ print(num, "x", x, " = ", num*x)
+ x=x+1
+
+Programa que imprime até um número digitado pelo usuário
+(estrutura de repetição)
+num = int(input("Digite o último número para imprimir : "))
+
+x=0
+while x <= num:
+ print(x)
+ x=x+1
+
+Programa que imprime até um número digitado pelo usuário
+(ordem decrescente)
+
+num = int(input("Digite o último número para imprimir : "))
+
+while num >= 0:
+ print(num)
+ num=num-1
+
+Exemplo de um programa de cálculo do IMC com opção de sair do sistema
+
+print("Cálculo do IMC")
+
+op='N'
+while op != "S" and op != "s":
+
+ nome=input("Digite o nome da pessoa :")
+ altura=float(input("Digite a altura :"))
+ peso=float(input("Digite o peso :"))
+
+ IMC = peso / (altura*altura)
+
+ print(nome , " seu IMC é : ", "%.2f" %IMC)
+
+ op = input("Digite 'S' para sair do sistema") # opção para sair do sistema
+print(“Fim do programa de cálculo do IMC“)
+
+Exemplo de um programa que imprime a tabuada de um número digitado e
+apresenta no final a soma e a multiplicação dos resultados
+
+num = int(input("Digite o número da tabuada desejada : "))
+
+soma=0
+mult=1
+
+x=0
+while x <= 10:
+
+ print(num, "x", x, " = ", num*x)
+
+ soma = soma+(num*x)
+ if x >= 1:
+ mult = mult*(num*x)
+
+ x=x+1 # controle do laço de repetição
+
+print("Soma total dos resultados : ", soma)
+print("Multiplicação dos resultados : ", "%.2f" %mult)
+
+Exemplo de um programa que lê 10 valores inteiros digitados pelo usuário.
+Para os valores digitados, considere apenas os positivos (maiores que zero),
+somando os valores ímpares e multiplicando os pares.
+
+somaImpares = 0
+multPares = 1
+
+cont = 1
+while cont <= 10:
+
+num = int(input("Digite um número inteiro : "))
+
+if num > 0:
+if num % 2 == 0:
+multPares = multPares * num
+else:
+somaImpares = somaImpares + num
+
+cont = cont + 1 # controle do laço de repetição
+
+print("Soma dos Impares =",somaImpares)
+print("Multiplicacao dos Pares =",multPares)

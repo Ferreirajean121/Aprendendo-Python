@@ -1,0 +1,60 @@
+Criar uma lista com 5 nomes
+listanomes = [“Joana”, “Paula”, “Marcela”, “Tatiana”, “Débora”]
+Incluir o nome “Adalberto”
+listanomes.append(“Adalberto”)
+
+Imprimir a lista
+print(listanomes)
+Remover um nome da lista
+listanomes.remove(“Joana”)
+
+Incluir o nome “Patricia” na posição 2
+listanomes.insert(1, “Patricia”)
+
+Imprimir a lista em ordem crescente
+listanomes.sort()
+
+Remover o “Adalberto” da lista
+listanomes.remove(“Adalberto”)
+
+Incluir o nome “Joaquim” na posição 1
+listanomes.insert(0, “Joaquim”)
+
+Imprimir a lista em ordem inversa
+listanomes.reverse()
+
+Limpar a lista
+listanomes.clear() 
+
+Criar uma lista com 12 números
+listanum = [4, 12, 8, 5, 1, 3, 9, 15, 22, 20, 7, 31]
+
+Incluir o número 45
+listanum.append(45)
+
+Imprimir a lista
+print(listanum)
+
+Remover um item da lista
+listanum.remove(22)
+
+Incluir o número 12 na posição 6
+listanum.insert(5, 12)
+
+Imprimir a lista em ordem inversa
+listanum.reverse()
+
+Remover um número da lista
+listanum.remove(8)
+
+Incluir o número 58 na posição 10
+listanum.insert(9, 58)
+
+Imprimir a lista em ordem crescente
+listanum.sort()
+
+Elimine o 4o. elemento dessa lista
+Listanum.pop(3)
+
+Limar a lista
+listanum.clear() 

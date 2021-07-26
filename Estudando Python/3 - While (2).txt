@@ -1,0 +1,151 @@
+Escreva um programa que mostre apenas os números ímpares até um
+número digitado pelo usuário.
+
+print("Imprime apenas os números ímpares")
+
+num = int(input("Digite até que número deseja imprimir : "))
+
+while num >= 0:
+ if num%2 != 0:
+ print(num)
+ num=num-1
+
+Escreva um programa que recebe 5 números digitados pelo usuário e mostre a soma e a
+multiplicação desses números.
+
+print("Imprime soma e multiplicação de números digitados")
+
+soma=0
+mult=1
+
+x=1
+while x <= 5:
+ num = int(input("Digite um número : "))
+ soma = soma+num
+ mult = mult*num
+ x=x+1
+
+Escreva um programa que mostre apenas os números múltiplos de 3 até
+um número digitado pelo usuário.
+
+print("Imprime apenas os números múltiplos de 3")
+
+num = int(input("Digite até que número deseja imprimir : "))
+
+while num >= 0:
+ if num%3 == 0:
+ print(num)
+ num=num-1
+
+Desenvolver um programa em python que leia 10 números digitados pelo usuário e
+apresente a qtde de positivos, negativos e zeros digitados.
+
+print("Imprime quantidade de positivos , negativos e zeros digitados")
+
+qtpositivos=0
+qtnegativos=0
+qtzeros=0
+
+x=1
+while x <= 10:
+ num = int(input("Digite um número : "))
+
+ if num>0:
+ qtpositivos = qtpositivos+1
+ elif num < 0:
+ qtnegativos = qtnegativos+1
+ else:
+ qtzeros = qtzeros+1
+ x=x+1
+
+print("Total de positivos digitados :", qtpositivos)
+print("Total de negativos digitados :", qtnegativos)
+print("Total de zeros digitados :", qtzeros)
+
+Desenvolver um programa em python que leia 12 idades e alturas digitados pelo usuário e
+apresente quantas idades estão acima de 18 anos e quantos tem mais de 1,75m.
+
+print("Imprime quantidade de maiores de 18 anos e maiores de 1.75m")
+
+qtmaior18=0
+qtmaior175=0
+
+x=1
+while x <= 12:
+
+ idade = int(input("Digite a idade : "))
+ altura = float(input("Digite a altura : "))
+ if idade >= 18:
+ qtmaior18 = qtmaior18+1
+ if altura >= 1.75:
+ qtmaior175 = qtmaior175+1
+ x=x+1
+
+print("Total de maiores de 18 anos :", qtmaior18)
+print("Total de maiores de 1.75m :", qtmaior175)
+
+Desenvolver um programa em python que leia números inteiros digitados pelo usuário e apresente
+quantos desses números são maiores de 1000 e quantos são pares.
+
+print("Imprime qtde de números maiores que 1000 e qtde de pares digitados")
+
+qtpares=0
+qtmaior=0
+
+op='N'
+while op != "S" and op != "s":
+
+ num=float(input("Digite um número : "))
+ if num > 1000:
+ qtmaior = qtmaior+1
+ if num%2 == 0:
+ qtpares = qtpares+1
+
+ op = input("Digite 'S' para sair do sistema")
+
+print("Quantidade de pares digitados : ", qtpares)
+print("Qtde de números acima de 1000 : ", qtmaior)
+
+Desenvolver um programa em python que leia idades digitadas pelo usuário e apresente
+quantas dessas idades estão entre 15 e 17 anos e quantas são maiores de 25 anos.
+
+print("Imprime qtde de idades entre 15 e 17 anos e as maiores de 25 anos")
+
+qt1517=0
+qtmaior25=0
+
+op='N'
+while op != "S" and op != "s":
+ idade=int(input("Digite a idade : "))
+ if idade >= 15 and idade <= 17:
+ qt1517 = qt1517 + 1
+ if idade > 25:
+ qtmaior25 = qtmaior25 + 1
+
+ op = input("Digite 'S' para sair do sistema")
+
+print("Quantidade de idades entre 15 e 17 anos : ", qt1517)
+print("Qtde de idades acima de 25 anos : ", qtmaior25)
+
+Desenvolver um programa em python que receba salários de funcionários de uma empresa de
+Tecnologia, e mostre a qtde de salários maior que R$ 2.000,00 e a média desses salários.
+
+print("Imprime qtde de salários acima de R$ 2.000,00 e a média deles")
+
+qtsal=0
+qtdig=0
+totalsal=0
+op='N'
+while op != "S" and op != "s":
+
+ salario=float(input("Digite o valor do salário :"))
+ qtdig = qtdig + 1
+ totalsal = totalsal + salario
+ if salario > 2000:
+ qtsal = qtsal + 1
+
+ op = input("Digite 'S' para sair do sistema")
+
+print("Quantidade de salários digitados : ", qtdig)
+print("Qtde de salários acima de R$ 2.000,00 : ", qtsal)
+print("Média dos salários digitados : ", totalsal/qtdig)

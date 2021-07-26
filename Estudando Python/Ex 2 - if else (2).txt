@@ -1,0 +1,96 @@
+Desenvolver um programa em python que
+apresente a média das 3 notas de um aluno e o
+resultado conforme abaixo.
+
+Resultado “Aprovado” para média superior a
+7, “Reprovado” para média inferior a 4 e
+“Recuperação” para o restante.
+
+nota1 = int(input("Digite a primeira nota: "))
+
+nota2 = int(input("Digite a segunda nota: "))
+
+nota3 = int(input("Digite a terceira nota: "))
+
+media = (nota1 + nota2 + nota3) / 3 
+
+if media >= 7:
+    print("Aprovado :)")
+elif media < 4:
+    print("Reprovado :O")
+else: 
+    print("Recuperação :(")
+
+Desenvolva um programa em Python que receba o
+nome e o salário de um trabalhador e apresente o
+salário reajustado conforme os critérios abaixo:
+
+Salário até R$1.500 -> reajuste de 20%, de
+R$1.500,01 até R$2.500,00 -> reajuste de 15%, de
+R$2.500,01 até R$3.200,00 -> reajuste de 12% e
+acima de R$3.200,00 -> reajuste de 5%
+
+nome = input("Digite seu nome: ")
+sal = float(input("Digite o valor do salário : "))
+
+if sal >= 0 and sal <= 1500:
+    sal=sal+(sal*0.20)
+    print(nome, sal)
+elif sal > 1500 and sal <= 2500:
+ sal=sal+(sal*0.15)
+ print(nome, sal)
+elif sal > 2500 and sal <= 3200:
+ sal=sal+(sal*0.12)
+ print(nome, sal)
+elif sal > 3000:
+ sal=sal+(sal*0.05)
+ print(nome, sal)
+else:
+ sal=sal+(sal*0.02)
+ print(nome, sal)
+print("Salário reajustado : ", sal)
+
+Desenvolva um programa em Python que receba 3
+números digitados e mostra o maior deles
+
+#programa que recebe 3 números digitados e mostra o maior deles
+print("Programa que mostra o maior número entre 3 digitados")
+
+n1 = float(input("Digite o 1o número: "))
+n2 = float(input("Digite o 2o número: "))
+n3 = float(input("Digite o 3o número: "))
+
+if n1 > n2 and n1 > n3:
+ print ("O maior número é :", n1)
+elif n2 > n1 and n2 > n3:
+ print ("O maior número é :", n2)
+elif n3 > n1 and n3 > n2:
+ print ("O maior número é :", n3)
+
+Desenvolver um programa em python que leia dois
+números e que pergunte qual operação deseja realizar.
+Você deve poder calcular soma (+), subtração (-),
+multiplicação (*) e divisão (/). Exiba o resultado da
+operação escolhida.
+
+for x in range(30):
+
+ print("Menu de escolha para operações")
+ print(" 1 ....... Adição")
+ print(" 2 ....... Subtração")
+ print(" 3 ....... Multiplicação")
+ print(" 4 ....... Divisão")
+ print(" 5 ....... Sair do sistema")
+ op = input("Digite sua opção ..... ")
+ if op == "5": # saída forçada
+ break
+ num1 = float(input("Digite o primeiro número : "))
+ num2 = float(input("Digite o segundo número : "))
+ if op == "1":
+ print("A soma dos números é : ", num1+num2)
+ if op == "2":
+ print("A subtração dos números é : ", num1-num2)
+ if op == "3":
+ print("A multiplicação dos números é : ", num1*num2)
+ if op == "4":
+ print("A divisão dos números é : ", num1/num2)

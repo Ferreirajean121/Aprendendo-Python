@@ -1,0 +1,92 @@
+Digite os exemplos abaixo no IDLE:
+
+dic = {“nome”:”Eduardo”, “idade”:25, “bairro”:”Jabaquara”}
+type(dic)
+print(dic[“nome”]) --> chave nome
+print(dic[“idade”]) --> chave idade
+print(dic)
+print(dic.keys())
+print(dic.values())
+
+Exemplo 2:
+
+preços = {“maçã”:2.50, “banana”:1.99, “laranja”:2.35}
+type(preços)
+print(preços)
+print(preços[“banana”]) --> chave banana
+print(preços[“maçã”]) --> chave maçã
+print(preços) 
+
+Exemplo 3:
+
+preços = {“maçã”:2.50, “banana”:1.99, “laranja”:2.35}
+medidas = {“peso”:86.3 , “altura”:1.78 , “idade”:21}
+print(preços.keys())
+print(preços.values())
+print(medidas.keys())
+print(medidas.values())
+
+Exemplo 4:
+
+dic = {“nome”:”Eduardo”, “idade”:25}
+print(dic)
+dic[“endereco”] = “Av Ipiranga”
+print(dic)
+dic[“Estado”] = “SP”
+print(dic)
+print(dic.keys())
+print(dic.values()) 
+
+Exemplo 5:
+
+preços = {“maçã”:2.50, “banana”:1.99, “laranja”:2.35}
+print(preços)
+preços[“melancia”] = 3.50
+print(preços)
+preços[“abacate”] = 2.99
+print(preços) 
+
+Exemplo 6:
+
+dic = {“nome”:”Adalberto”, “idade”:21, “bairro”:”Centro”}
+print(dic)
+del dic[“bairro”]
+print(dic) 
+
+Exemplo 7:
+
+preços = {“maçã”:2.50, “banana”:1.99, “laranja”:2.35 , “pera”:3.99 , “goiaba”:3.50}
+print(preços)
+del preços[“maçã”]
+del preços[“pera”]
+print(preços) 
+
+Exemplo 8:
+
+geral=[] # lista
+nome1={"nome":"Paulo", "idade":"25"} # dicionários
+nome2={"nome":"Adriana", "idade":"20"}
+nome3={"nome":"Joana", "idade":"19"}
+geral.append(nome1)
+geral.append(nome2)
+geral.append(nome3)
+
+print(geral)
+
+Exemplo 9, lista:
+
+geral=[] # lista
+nome1={"nome":"Mariana", "idade":"21"} # dicionários
+nome2={"nome":"Tatiane", "idade":"23"}
+nome3={"nome":"Fábio", "idade":"20"}
+geral.append(nome1)
+geral.append(nome2)
+geral.append(nome3)
+
+print(nome1["idade"])
+print(nome2["nome"])
+
+print(geral[0])
+print(geral[1])
+
+

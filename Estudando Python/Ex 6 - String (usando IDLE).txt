@@ -1,0 +1,53 @@
+Exercício (via console IDLE)
+
+Crie a variável x com “Teste de string no Python”
+>>> x = “Teste de string no Python”
+
+Crie a variável y com “Aprendendo a manipular strings no Python”
+>>> y = “Aprendendo a manipular strings no Python”
+
+Crie a variável z com “Vamos trabalhar com strings”
+>>> z = “Vamos trabalhar com strings”
+
+Conte quantas letras “a” e letras “i” tem nessas variáveis
+>>> x.count(“a”) y.count(“a”) z.count(“a”)
+>>> x.count(“i”) y.count(“i”) z.count(“i”)
+
+Procure a letra “p” e a letra “e” nessas variáveis
+>>> x.find(“p”) y.find(“p”) z.find(“p”)
+>>> x.find(“e”) y.find(“e”) z.find(“e”)
+
+Mostre o tamanho dessas variáveis
+>>> len(x) len(y) len(z)
+
+Transforme a variável x e a variável z em tudo maiúsculo
+>>> x.upper() z.upper()
+
+Modifique a palavra ‘manipular’ por ‘trabalhar’ na variável y
+>>> y.replace(“manipular”, “trabalhar”)
+
+
+Crie a variável a com “Bom dia Pessoal”
+>>> a = “Bom dia Pessoal”
+Crie a variável b com “O cálculo está correto”
+>>> b = “O cálculo está correto”
+Crie a variável c com “A senha digitada está incorreta”
+>>> c = “A senha digitada está incorreta”
+Mostre o tamanho dessas variáveis
+>>> len(a) len(b) len(c)
+
+Concatene a variável a com a variável b.
+>>> a+b b+a
+Procure a letra “c” e a letra “e” nessas variáveis
+>>> a.find(“c”) b.find(“c”) c.find(“c”)
+>>> a.find(“e”) b.find(“e”) c.find(“e”)
+
+Conte quantas letras “n” e “o” tem nessas variáveis
+>>> a.count(“n”) b.count(“n”) c.count(“n”)
+>>> a.count(“o”) b.count(“o”) c.count(“o”)
+
+Modifique a palavra ‘Pessoal’ por ‘Estudantes’ na variável a
+>>> a.replace(“Pessoal”, “Estudantes”)
+
+Transforme a variável b e a variável c em tudo 
+>>> a.lower() c.lower()

@@ -1,0 +1,114 @@
+Programa 1 – Criando uma lista de números (sort)
+
+Leia uma sequência de números e mostre-os em ordem crescente.
+O programa é finalizado quando digitado o valor 0 (zero).
+
+listaNum = [ ]
+num = float(input("Digite o número ou zero para finalizar: "))
+
+while num != 0:
+ listaNum.append(num)
+ num = float(input("Digite o número ou zero para finalizar: "))
+listaNum.sort()
+tam = len(listaNum) - 1
+x=0
+while x<=tam:
+ print(listaNum[x])
+ x = x+1
+
+Leia uma sequência de nomes e mostre-os em ordem crescente.
+O programa é finalizado quando digitado “F”.
+
+listaNomes = [ ]
+nome = input("Digite o nome ou ‘F' para finalizar: ")
+
+while nome.lower() != ‘f':
+ listaNomes.append(nome)
+ nome = input("Digite o nome ou ‘F' para finalizar: ")
+listaNomes.sort()
+tam = len(listaNomes) - 1
+x=0
+while x<=tam:
+ print(listaNomes[x])
+ x = x+1
+
+Leia uma sequência de números e mostre-os em ordem inversa.
+O programa é finalizado quando digitado o valor 0 (zero).
+
+ listaNum = [ ]
+num = float(input("Digite o número ou '0' para finalizar: ")
+
+while num != 0:
+ listaNum.append(num)
+ num = float(input("Digite o número ou '0' para finalizar: "))
+listaNum.reverse()
+tam = len(listaNum) - 1
+x=0
+while x<=tam:
+ print(listaNum[x])
+ x = x+1
+
+Leia uma sequência de números e mostre-os em ordem inversa.
+O programa é finalizado quando digitado o valor 0 (zero).
+
+ listaNum = [ ]
+num = float(input("Digite o número ou zero para finalizar: "))
+
+while num != 0:
+ listaNum.append(num)
+ num = float(input("Digite o número ou zero para finalizar: "))
+tam = len(listaNum) - 1
+
+while tam >= 0:
+ print(listaNum[tam])
+ tam = tam - 1
+
+
+Criando e escrevendo em um arquivo
+
+arquivo = open('arquivo.txt', 'w') # w – modo de escrita
+arquivo.write('nova linha')
+arquivo.close()
+
+Obs. Após a criação do arquivo verifique a criação e seu conteúdo.
+
+Limpando um arquivo (limpar/apagar um arquivo já existente)
+
+arquivo = open('arquivo.txt', 'w') # w – modo de escrita
+arquivo.close()
+
+Adicionando conteúdo ao arquivo (lista com nomes)
+
+arquivo = open('arquivo.txt', 'r') # Abre o arquivo (modo leitura)
+lista = arquivo.readlines() # lista com as linhas do arquivo
+
+x=1
+while x <= 5:
+ nome=input("Digite um nome para adicionar .... ")
+ lista.append("\n"+nome) # insere novo nome na lista
+ x=x+1
+
+arquivo = open('arquivo.txt', 'w') # Abre o arquivo (modo escrita)
+arquivo.writelines(lista) # escreve o conteúdo no arquivo
+arquivo.close()
+
+Obs. Após adicionar conteúdo no arquivo verifique.
+
+Adicionando conteúdo ao arquivo (lista com nomes e idades)
+
+arquivo = open('arquivo.txt', 'r') # Abre o arquivo (modo leitura)
+lista = arquivo.readlines() # lista com as linhas do arquivo
+
+x=1
+
+while x <= 5:
+ nome=input("Digite um nome .... ")
+ idade=int(input("Digite a idade ... "))
+ lista.append("\n"+nome+' - '+str(idade)+' anos') # insere nome e idade na lista
+ x=x+1
+
+arquivo = open('arquivo.txt', 'w') # Abre o arquivo (modo escrita)
+arquivo.writelines(lista) # escreve o conteúdo no arquivo
+arquivo.close()
+
+

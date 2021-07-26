@@ -1,0 +1,67 @@
+Exercicio 1)
+#Desenvolver um programa em python que receba dois
+#números digitados e apresente a soma e a subtração
+#desses dois números.
+
+num1 = float(input("Digite o primeiro número :")) # entrada de dados
+num2 = float(input("Digite o segundo número :"))
+
+print("Valor da soma é :", num1+num2) # saída
+print("Valor da diferença é :", num1-num2)
+
+#segunda forma de estrutura
+
+num1 = float(input("Digite o primeiro número :")) # entrada de dados
+num2 = float(input("Digite o segundo número :"))
+
+valorsoma = num1+num2 # processamento
+valorsubt = num1-num2 (variáveis de cálculo)
+
+print("Valor da soma é :", valorsoma) # saída
+print("Valor da diferença é :", valorsubt)
+
+Exercicio 2)
+
+Desenvolver um programa em python que apresente a
+média final das notas de um aluno (base 4 notas)
+
+print("Cálculo da média de um aluno")
+
+n1=float(input("Digite a primeira nota :")) # entrada de dados
+n2=float(input("Digite a segunda nota :"))
+n3=float(input("Digite a terceira nota :"))
+n4=float(input("Digite a quarta nota :"))
+
+mediafinal = (n1+n2+n3+n4)/4 # processamento
+
+print("A média das notas é : ", mediafinal) # saída
+
+#segunda forma de estrutura
+
+print("Cálculo da média de um aluno")
+
+n1=float(input("Digite a primeira nota :")) # entrada de dados
+n2=float(input("Digite a segunda nota :"))
+n3=float(input("Digite a terceira nota :"))
+n4=float(input("Digite a quarta nota :"))
+
+mediafinal = (n1+n2+n3+n4)/4 # processamento
+
+print("A média das notas é : ", "%.2f" %mediafinal) # saída formatada
+
+Exercicio 3)
+Desenvolver um programa em python que apresente o
+cálculo do IMC de uma pessoa.
+
+print("Cálculo do IMC")
+
+nome=input("Digite o nome da pessoa : “) # entrada de dados
+altura=float(input("Digite a altura : "))
+peso=float(input("Digite o peso : "))
+
+IMC = peso / (altura*altura) # processamento
+
+print(“Resultado do Cálculo do IMC")
+
+print(nome , “ seu IMC é : “, "%.2f" %IMC) # saída formatada 
+

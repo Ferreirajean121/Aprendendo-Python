@@ -1,0 +1,167 @@
+Criar um dicionário de dados que represente a tabela abaixo
+PRODUTO PREÇO
+Alface R$ 1,20
+Batata R$ 3,45
+Tomate R$ 3,80
+Arroz R$ 5,72
+Feijão R$ 5,15
+Após a criação, visualize as chaves desse dicionário e os seus valores.
+Insira mais dois produtos nesse dicionário de dados.
+
+produtos = {'alface':1.20, 'batata':3.45, 'tomate':3.80, 'arroz':5.72,
+'feijão':5.15}
+
+print(produtos)
+produtos.keys()
+produtos.values()
+produtos['cebola']=1.99
+produtos['rúcula']=1.35
+
+print(produtos)
+
+produtos.keys()
+produtos.values()
+
+Criar um dicionário de dados que represente a tabela abaixo
+PRODUTO PREÇO
+Notebook R$ 2.499,00
+Mouse R$ 54,82
+Teclado R$ 143,56
+Monitor R$ 275,78
+Impressora R$ 435,35
+Após a criação, visualize as chaves desse dicionário e os seus valores.
+Insira mais dois produtos nesse dicionário de dados.
+Elimine um produto desse dicionário.
+
+produtos = {'notebook':2499.00, 'mouse':54.82, 'teclado':143.56,
+'monitor':275.78, 'impressora':435.35}
+print(produtos)
+produtos.keys()
+produtos.values()
+produtos['impressora 3D']=2300.00
+produtos['mesa digitalizadora']=890.55
+print(produtos)
+del produtos['mouse']
+print(produtos)
+
+Inclusão de dados em um dicionário
+
+produtos={ }
+while True:
+ prod=input("Digite o nome do produto para incluir ou 'fim' para terminar : ")
+ if prod == 'fim':
+ break
+ else:
+ valor=float(input("Entre com o valor do produto : "))
+ produtos[prod]=valor
+
+consulta em um dicionário de dados
+
+produtos={'alface':1.20 , 'batata':3.99 , 'tomate':2.99 , 'feijão':5.15}
+while True:
+ prod = input("Digite o nome do produto ou 'fim' para terminar : ")
+ if prod == 'fim':
+ break
+ if prod in produtos:
+ print('Produto : '+prod+' Preço : '+str(produtos[prod]))
+ else:
+ print('Produto não encontrado. Verifique')
+
+Criar um programa em python que permita cadastrar os produtos da tabela
+abaixo em um dicionário de dados
+PRODUTO PREÇO
+Ventilador R$ 59,90
+Aspirador de pó R$ 99,23
+Microondas R$ 299,80
+Geladeira R$ 1.958,99
+Fogão R$ 475,75
+Máq.Lavar R$ 989,90
+
+
+produtos={ }
+while True:
+ prod=input("Digite o nome do produto para incluir ou 'fim' para terminar : ")
+ if prod == 'fim':
+ break
+ else:
+ valor=float(input("Entre com o valor do produto : "))
+ produtos[prod]=valor
+
+Criar um programa em python que permita consultar os produtos da tabela
+abaixo utilizando um dicionário de dados
+PRODUTO PREÇO
+Camiseta R$ 29,90
+Bermuda R$ 65,78
+Calça social R$ 125,54
+Calça jeans R$ 89,90
+Camisa polo R$ 45,58
+Tênis R$ 159,90
+
+produtos={'camiseta':29.90 , 'bermuda':65.78 , 'calça social':125.54 , 'calça
+jeans':89.90 , 'camisa polo':45.58 , 'tênis':159.90 }
+while True:
+ prod = input("Digite o nome do produto ou 'fim' para terminar : ")
+ if prod == 'fim':
+ break
+ if prod in produtos:
+ print('Produto : '+prod+' Preço : '+str(produtos[prod]))
+ else:
+ print('Produto não encontrado. Verifique')
+
+Criar um programa em python que permita cadastrar e consultar os
+produtos da tabela abaixo utilizando um dicionário de dados
+PRODUTO PREÇO
+Notebook R$ 2.499,00
+Mouse R$ 54,82
+Teclado R$ 183,55
+Monitor R$ 275,78
+Impressora R$ 435,35
+Scanner R$ 329,90
+
+produtos={ }
+while True:
+ prod=input("Digite o nome do produto para incluir ou 'fim' para terminar : ")
+ if prod == 'fim':
+ break
+ else:
+ valor=float(input("Entre com o valor do produto : "))
+ produtos[prod]=valor
+print('Fim do cadastramento dos produtos')
+
+while True:
+ prod = input("Digite o nome do produto para consultar ou 'fim' para terminar : ")
+ if prod == 'fim':
+ break
+ if prod in produtos:
+ print('Produto : '+prod+' Preço : '+str(produtos[prod]))
+ else:
+ print('Produto não encontrado. Verifique‘)
+
+Criar um programa em python que permita cadastrar e consultar os
+produtos da tabela abaixo utilizando um dicionário de dados
+PRODUTO PREÇO
+Caneta R$ 2,99
+Lápis R$ 1,50
+Borracha R$ 3,54
+Lapiseira R$ 9,90
+Estojo R$ 15,85
+Régua R$ 1,25
+Cartolina R$ 2,58
+
+produtos={ }
+while True:
+ prod=input("Digite o nome do produto para incluir ou 'fim' para terminar : ")
+ if prod == 'fim':
+ break
+ else:
+ valor=float(input("Entre com o valor do produto : "))
+ produtos[prod]=valor
+print('Fim do cadastramento dos produtos')
+while True:
+ prod = input("Digite o nome do produto para consultar ou 'fim' para terminar : ")
+ if prod == 'fim':
+ break
+ if prod in produtos:
+ print('Produto : '+prod+' Preço : '+str(produtos[prod]))
+ else:
+ print('Produto não encontrado. Verifique‘)

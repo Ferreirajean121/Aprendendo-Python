@@ -1,0 +1,75 @@
+Crie a variável carro com a string “Mustang”
+>>> carro=“Mustang”
+
+Crie a variável fruta com a string “Laranja”
+>>> fruta=“Laranja”
+
+Crie a variável nome com a string “Marta de Oliveira”
+>>> nome=“Marta de Oliveira”
+
+Verifique alguns índices dessas variáveis e seu conteúdo
+carro[0] fruta[0] nome[0]
+carro[2] fruta[3] nome[7]
+carro[6] fruta[5] nome[9]
+
+Conte quantas letras “a” e letras “i” tem nessas variáveis
+carro.count(“a”) fruta.count(“a”) nome.count(“a”)
+carro.count(“i”) fruta.count(“i”) nome.count(“i”)
+
+Determine o tamanho dessas variáveis
+len(carro) len(fruta) len(nome)
+
+Procure a letra “a” e a letra “n” nessas variáveis
+carro.find(“a”) fruta.find(“a”) nome.find(“a”)
+carro.find(“n”) fruta.find(“n”) nome.find(“n”)
+
+Transforme a variável nome em tudo maiúsculo
+>>> nome.upper()
+
+Modifique a letra ‘a’ por ‘b’ na variável fruta
+>>> fruta.replace(“a” , ”b”)
+
+Transforme a variável nome em tudo minúsculo
+>>> nome.lower()
+
+Modifique a letra ‘e’ por ‘tttbx’ na variável nome
+>>> nome.replace(“e” , ”tttbx”)
+
+Apresente a variável nome com a primeira letra maiúscula e as
+demais em minúscula (idem para a variável fruta)
+>>> nome.capitalize() 
+>>> fruta.capitalize()
+
+Elimine os espaços em branco da variável carro e da variável fruta
+>>> carro.strip() 
+>>> fruta.strip()
+
+Modifique a letra ‘a’ por ‘1177’ na variável carro e na variável fruta
+>>> carro.replace(“a” , ”1177”)
+>>> fruta.replace(“a” , ”1177”)
+
+Crie as variáveis a = “arara”, f = “falcão” , z = “zebra” , m = “arara”
+faça as comparações abaixo e verifique os resultados
+>>> a == f 
+>>> z != f 
+>>> a < z
+>>> a != z 
+>>> m == a 
+>>> z < f
+>>> f == z 
+>>> f == m 
+>>> m > f
+
+Faça a concatenação das variáveis a,f,z para formar a frase:
+ “A arara está no zoológico mais próxima do falcão do que da zebra”
+>>> “A “+ a +” está no zoológico mais próxima do “+ f +” do que da “ + z
+
+String com estrutura de repetição
+
+qt = 0
+
+for x in “brincadeira":
+ if x == "a":
+ qt = qt+1 # contador de letras a
+print("Qtde de letras 'a' em ‘brincadeira' é :", qt)
+

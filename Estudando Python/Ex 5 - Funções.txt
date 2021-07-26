@@ -1,0 +1,165 @@
+Desenvolver um programa em python que recebe 2 números digitados pelo usuário e
+mostra o maior deles.
+
+def calcMaior(num1,num2): # função calcula maior número
+ if num1 > num2:
+ maior = num1
+ else:
+ maior = num2
+ return maior
+op='N'
+while op != "S" and op != "s":
+
+ print("\n Programa que mostra o maior número entre 2 digitados \n")
+ num1 = float(input("Digite o primeiro número : "))
+ num2 = float(input("Digite o segundo número : "))
+ num = calcMaior(num1,num2) # chamada da função
+ print("\n O maior número digitado é : " , num)
+ op = input("\n Digite 'S' para sair do sistema \n")
+
+
+
+Desenvolver um programa em python que faça a
+conversão de dólar para real utilizando função.
+
+(fórmula para cálculo : qtde.dólares X cotação em real)
+
+def calcCotacao(dolar,cotacao): # função cotação dolar para real
+ qtde = dolar*cotacao
+ return qtde
+
+op='N'
+while op != 'S' and op != 's':
+
+ print("\n Programa que calcula a cotação dólar para real \n")
+ dolar = float(input("Digite a quantidade de dólares ... "))
+ cotacao = float(input("Digite a cotação dólar/real ... "))
+
+ if dolar > 0:
+ qtreal = calcCotacao(dolar,cotacao) # chamada da função
+ print("A sua quantidade em reais é de ", "%.2f" %qtreal)
+ else:
+ print("Qtde de dólares incorreta, verifique.")
+
+ op = input("\n Digite 'S' para sair do sistema")
+print("\n Programa finalizado")
+
+
+Desenvolver um programa em python que calcule o novo
+salário de um funcionário, utilizando função, reajustando
+em 10% se o salário for maior de R$ 2.000,00 e em 15% se
+o salário for menor ou igual a R$ 2.000,00.
+
+def calcReajuste(renda): # função reajuste com um parâmetro e valor de retorno
+ if renda <= 2000.00:
+ return renda * 1.15
+ else:
+ return renda * 1.10
+
+op='N'
+while op != 'S' and op != 's':
+
+ print("\n >>>>> Cálculo de reajuste de salário <<<<< \n")
+ renda = float(input("Entre com o valor do salário em R$ : "))
+
+ reaj = calcReajuste(renda) # chamada da função
+
+ print("\n O novo salário será de R$ ", "%.2f" %reaj)
+ op = input("\n Digite 'S' para sair do sistema")
+print("\n Programa finalizado")
+
+Desenvolver um programa em python que calcule o
+rendimento de uma aplicação financeira utilizando
+função.
+
+Dado: M = C.(1+i)n
+
+def calculajuros(capital, taxa, periodo): # função juros composto com três parâmetros e retorno
+ montante = capital * (1+taxa/100)** periodo
+ return montante
+op='N'
+while op != 'S' and op != 's':
+ print("\n Rendimento de uma aplicação a juros composto")
+
+ capital = float(input("Entre com o Capital em R$ : "))
+ taxa = float(input("Entre com a Taxa em % : "))
+ periodo = int(input("Entre com o Período em meses : "))
+
+ valjuros = calculajuros(capital, taxa, periodo) # chamada da função
+
+ print("Montante após ", periodo, " meses de aplicação ---> R$ ", "%.2f" %valjuros)
+
+ op = input("\n Digite 'S' para sair do sistema")
+print("\n Programa finalizado")
+
+
+
+Desenvolver um programa em python que mostre o
+resultado do IMC de uma pessoa com suas faixas,
+utilizando função.
+
+cálculo do IMC = peso dividido pela altura ao quadrado.
+(faixas do IMC : abaixo de 18,5 “Magro”, entre 18,5 e 24,9 “Normal”, entre 25 e 29,9
+“Sobrepeso”, entre 30 e 39,9 “Obeso” e superior a 40 “Obesidade Grave”)
+
+def calcIMC(IMC): # função cálculo do IMC – um parâmetro e sem valor de retorno
+ if IMC < 18.5:
+ print("Magro")
+ elif IMC >= 18.5 and IMC <= 24.9:
+ print("Peso normal")
+ elif IMC > 24.9 and IMC <= 29.9:
+ print("Sobrepeso")
+ elif IMC > 29.9 and IMC <= 39.9:
+ print("Obeso")
+ else:
+ print("Obesidade Grave")
+print("\n Cálculo do IMC com suas faixas \n")
+op='N'
+while op != "S" and op != "s":
+ nome=input("Digite o nome da pessoa : ") # entrada de dados
+ altura=float(input("Digite a altura : "))
+ peso=float(input("Digite o peso : "))
+ IMC = peso / (altura*altura)
+
+ print("\n Resultado do Cálculo do IMC \n")
+ print(nome , " seu IMC é : ", "%.2f" %IMC) # saída de dados
+ calcIMC(IMC) # chamada da função
+ op = input("\n Digite 'S' para sair do sistema \n")
+
+
+Desenvolver um programa em python que informe se
+uma pessoa é maior de idade (base 18 anos) e se é
+alta ou baixa (base 1,50m) utilizando função.
+
+def calcidade(idade): # função da idade – um parâmetro
+ if idade >= 18:
+ print("Maior de idade")
+ else:
+ print("Menor de idade")
+def calcaltura(altura): # função da altura – um parâmetro
+ if altura > 1.50:
+ print("Pessoa alta")
+ else:
+ print("Pessoa baixa")
+op='N'
+while op != "S" and op != "s":
+
+ idade = int(input("Digite a idade da pessoa : "))
+ altura = float(input("Digite a altura da pessoa : "))
+
+ calcidade(idade) # chamada da função
+ calcaltura(altura) # chamada da função
+ op = input("\n Digite 'S' para sair do sistema \n")
+
+
+Desenvolver um programa em python que calcule a
+média de um aluno (base 2 notas) utilizando função e
+apresente no final o resultado conforme abaixo:
+Resultado :
+“Aprovado” para média superior a 7
+“Reprovado” para média inferior a 4
+e “Recuperação” para o restante
+
+
+
+

@@ -1,0 +1,52 @@
+Desenvolver um programa em python que
+apresente o cálculo de figuras geométricas
+(quadrado, retângulo, círculo, triângulo).
+
+-Quadrado
+
+lado = int(input("Digite o lado do quadrado: "))
+area = lado * lado
+peri = lado * 4
+print("Area do quadrado: ", area)
+print("Perimetro do qaudrado", peri)
+
+-Retângulo 
+
+base = int(input("Informe a base: "))
+altura = int(input("Informe a altura: "))
+
+area = base * altura / 2
+
+print("A area do retangulo é: ", area)
+
+- Circulo
+
+raio = float(input("Entre com o valor do raio: "))
+
+circu = 2 * 3.14 * raio
+
+print("a circunferência do circulo é: ", circu)
+
+
+-Triângulo 
+
+base = int(input("Informe a base: "))
+altura = int(input("Informe a altura: "))
+
+area = base * altura / 2
+
+print("A area do triangulo é: ", area)
+
+Exercicio 2)
+Desenvolver um programa em python que
+apresente o consumo médio de um veículo.
+(fórmula para cálculo : distância percorrida/consumo)
+
+distancia = float(input("Digite a distancia percorrida: "))
+
+consumo = float(input("Digite o consumo: "))
+
+calculo = distancia/consumo
+
+print("A média do consumo do seu veiculo é: ", calculo)
+

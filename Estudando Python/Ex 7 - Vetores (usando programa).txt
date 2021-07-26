@@ -1,0 +1,182 @@
+Criar um programa em python que gere uma lista de
+casamento com 12 convidados (nomes). Apresente ao
+final essa lista de casamento em ordem alfabética.
+
+lista = [ ]
+
+x=1
+while x <= 12:
+ nome = input("Digite o nome para a lista de casamento : ")
+ lista.append(nome)
+ x=x+1
+
+print('\nLista de convidados em Ordem alfabética')
+lista.sort() # ordem alfabetica
+tam = len(lista) - 1
+x=0
+while x<=tam:
+ print(lista[x])
+ x = x+1
+
+Criar um programa em python que gere uma lista de
+compras de mercado com 8 itens e apresente essa lista em
+ordem alfabética e depois em ordem inversa.
+
+lista = [ ]
+x=1
+
+while x <= 8:
+ nome = input("Digite um item da lista de mercado : ")
+ lista.append(nome)
+ x=x+1
+
+print('\nLista em Ordem alfabética')
+
+lista.sort() # ordem alfabetica
+tam = len(lista) - 1
+x=0
+while x<=tam:
+ print(lista[x])
+ x = x+1
+print('\nLista em Ordem inversa')
+lista.reverse() # ordem inversa
+tam = len(lista) - 1
+
+x=0
+while x<=tam:
+ print(lista[x])
+ x = x+1
+
+Criar um programa em python que gere uma lista de salários
+digitados pelo usuário. O programa deve ser finalizado se for
+digitado o valor 0 (zero).
+
+a) Mostre os salários em ordem crescente
+b) Apresente a soma total dos salários digitados
+
+listaNum = [ ]
+num = float(input("Digite o salário ou ‘0' para finalizar: "))
+
+while num != 0:
+ listaNum.append(num)
+ num = float(input("Digite o salário ou ‘0' para finalizar: "))
+print('\nSalários em Ordem alfabética')
+
+listaNum.sort()
+tam = len(listaNum) - 1
+total=0
+x=0
+
+while x<=tam:
+ print(listaNum[x])
+ total = total+listaNum[x]
+ x = x+1
+print("\nA soma dos salários dessa lista é :", "%.2f" %total)
+
+Criar um programa em python que gere uma lista de
+números (tipo float) digitados pelo usuário. O programa
+deve ser finalizado se for digitado o valor 0 (zero).
+
+a) Mostre-os em ordem crescente
+b) Mostre-os em ordem decrescente
+c) Apresente a soma total dos números digitados 
+
+listaNum = [ ]
+num = float(input("Digite um número ou ‘0' para finalizar: "))
+
+while num != 0:
+ listaNum.append(num)
+ num = float(input("Digite um número ou ‘0' para finalizar: "))
+print('\nLista em Ordem alfabética')
+listaNum.sort()
+tam = len(listaNum) - 1
+
+x=0
+while x<=tam:
+ print(listaNum[x])
+ x = x+1
+
+print('\nLista em Ordem inversa')
+listaNum.reverse()
+tam = len(listaNum) - 1
+total=0
+
+x=0
+while x<=tam:
+ print(listaNum[x])
+ total = total+listaNum[x]
+ x = x+1
+print("\nA soma total dos números dessa lista é :", total)
+
+Criar um programa em python que gere uma lista de idades
+digitadas pelo usuário.
+O programa deve ser finalizado se for digitado o valor 999.
+
+a) Mostre as idades em ordem crescente
+b) Apresente a qtde de idades pares e de idades ímpares
+c) Apresente a qtde dos maiores e dos menores de 18 anos
+
+listaNum = [ ]
+num = int(input("Digite uma idade ou '999' para finalizar: "))
+
+while num != 999:
+ listaNum.append(num)
+ num = int(input("Digite uma idade ou '999' para finalizar: "))
+print('\nIdades em Ordem alfabética')
+listaNum.sort()
+tam = len(listaNum) - 1
+qtpar=0
+qtimpar=0
+qtmaior=0
+qtmenor=0
+
+x=0
+while x<=tam:
+ print(listaNum[x])
+ if listaNum[x]%2 == 0:
+ qtpar=qtpar+1
+ else:
+ qtimpar=qtimpar+1
+ if listaNum[x] >= 18:
+ qtmaior=qtmaior+1
+ else:
+ qtmenor=qtmenor+1
+ x = x+1
+
+print("\nA quantidade de idades pares é :", qtpar)
+print("A quantidade de idades ímpares é :", qtimpar)
+print("\nA quantidade de maiores de 18 anos é :", qtmaior)
+print("A quantidade de menores de 18 anos é :", qtmenor)
+
+
+Criar um programa em python que gere uma lista de salários
+digitados pelo usuário.
+
+O programa deve ser finalizado se for digitado o valor 0 (zero).
+a) Mostre os salários em ordem crescente
+b) Mostre o maior salário dessa lista
+c) Mostre o menor salário dessa lista
+
+listaNum = [ ]
+num = float(input("Digite o salário ou ‘0' para finalizar: "))
+
+while num != 0:
+ listaNum.append(num)
+ num = float(input("Digite o salário ou ‘0' para finalizar: "))
+print('\nSalários em Ordem alfabética')
+listaNum.sort()
+tam = len(listaNum) - 1
+
+maior=0
+menor=0
+x=0
+while x<=tam:
+ print(listaNum[x])
+ if listaNum[x] > maior:
+ maior = listaNum[x]
+ if listaNum[x] < menor or menor == 0:
+ menor = listaNum[x]
+ x = x+1
+
+print("\nO menor salário dessa lista é :", menor)
+print("\nO maior salário dessa lista é :", maior)

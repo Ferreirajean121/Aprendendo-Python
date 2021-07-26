@@ -1,0 +1,98 @@
+Criar um programa que leia quatro nomes digitados pelo
+usuário e armazene em uma matriz 2X2. Mostre essa
+matriz gerada no final.
+
+nomes = [ [0,0] , [0,0] ] # matriz 2X2
+
+for linha in range(0,2): # vai de 0 a 1
+ for coluna in range(0,2): # vai de 0 a 1
+ nomes[linha][coluna] = input("Entre com o nome ... ")
+
+print("Matriz 2X2 gerada")
+print(nomes)
+
+Criar um programa em python que armazene nome e peso
+de 2 clientes em uma matriz 2X2. Apresente no final a
+matriz gerada e a soma total dos pesos.
+
+m2=[ [0,0] , [0,0] ]
+
+total=0
+for linha in range(0,2): # vai de 0 a 1 (2 repetições)
+ m2[linha][0] = input("Entre com o nome do cliente ... ")
+ m2[linha][1] = float(input("Entre com o peso do cliente ... "))
+ total = total + m2[linha][1]
+
+print("Soma total dos pesos é ", total)
+
+Criar um programa em python que armazene 6 salários
+digitados pelo usuário em uma matriz 3X2. Apresente no
+final a matriz gerada e a soma total desses salários.
+
+sal = [ [0,0] , [0,0] , [0,0] ] # matriz 3X2
+
+total=0
+for linha in range(0,3): # vai de 0 a 2
+ for coluna in range(0,2): # vai de 0 a 1
+ sal[linha][coluna] = float(input("Entre com o salário ... "))
+ total = total + sal[linha][coluna]
+
+print("Matriz 3X2 gerada")
+print(sal)
+print("Soma total dos salários ... ", "%.2f" %total)
+
+Criar um programa em python que armazene 9 idades
+digitadas pelo usuário em uma matriz 3X3. Apresente no
+final a matriz gerada e a média dessas idades.
+
+idade = [ [0,0,0] , [0,0,0] , [0,0,0] ] # matriz 3X3
+
+total=0
+for linha in range(0,3): # vai de 0 a 2
+ for coluna in range(0,3): # vai de 0 a 2
+ idade[linha][coluna] = int(input("Entre com a idade ... "))
+ total = total + idade[linha][coluna]
+
+print("Matriz 3X3 gerada")
+print(idade)
+media = total/9
+print("Média das idades ... ", "%.2f" %media)
+
+Criar um programa em python que armazene 8 salários digitados
+pelo usuário em uma matriz 4X2. Apresente no final a matriz
+gerada, a soma total dos salários e a média desses salários.
+
+sal = [ [0,0] , [0,0] , [0,0] , [0,0] ]
+
+total=0
+for linha in range(0,4): # vai de 0 a 3
+ for coluna in range(0,2): # vai de 0 a 1
+ sal[linha][coluna] = float(input("Entre com o salário ... "))
+ total = total + sal[linha][coluna]
+
+print("Matriz 4X2 gerada")
+print(sal)
+media = total/8
+print("Soma total dos salários ... ", "%.2f" %total)
+print("Média desses salários ... ", "%.2f" %media)
+
+Criar um programa em python que armazene 9 alturas digitadas
+pelo usuário em uma matriz 3X3. Apresente no final a matriz
+gerada, a maior altura digitada e a média dessas alturas.
+
+altura = [ [0,0,0] , [0,0,0] , [0,0,0] ]
+
+maior=0
+total=0
+for linha in range(0,3): # vai de 0 a 2
+ for coluna in range(0,3): # vai de 0 a 2
+ altura[linha][coluna] = float(input("Entre com a altura ... "))
+ total = total + altura[linha][coluna]
+ if altura[linha][coluna] > maior:
+ maior = altura[linha][coluna]
+
+print("Matriz 3X3 gerada")
+print(altura)
+media = total/9
+print("A maior altura digitada é : ", maior)
+print("Média dessas alturas ... ", "%.2f" %media)

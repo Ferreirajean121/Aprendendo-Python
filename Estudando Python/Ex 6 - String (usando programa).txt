@@ -1,0 +1,172 @@
+Desenvolva um programa em Python que receba uma
+frase digitada pelo usuário.
+
+Mostre o tamanho dessa frase digitada
+
+Mostre quantas letras “a” “m” “c” “p” e “f” tem
+nessa frase
+
+# resolução sem uso do FOR
+palavra = input("Digite uma palavra ou frase qualquer : ")
+
+tam=len(palavra)
+
+qta=palavra.count("a")
+qtm=palavra.count("m")
+qtc=palavra.count("c")
+qtp=palavra.count("p")
+qtf=palavra.count("f")
+
+print("Tamanho da palavra digitada : ", tam)
+print("Qtde de letras 'a' em ", palavra, " é :", qta)
+print("Qtde de letras 'm' em ", palavra, " é :", qtm)
+print("Qtde de letras 'c' em ", palavra, " é :", qtc)
+print("Qtde de letras 'p' em ", palavra, " é :", qtp)
+print("Qtde de letras 'f' em ", palavra, " é :", qtf)
+
+Resolução com uso do FOR
+
+qta=0 
+qtm=0
+qtc=0
+qtp=0
+qtf=0
+
+palavra = input("Digite uma palavra ou frase qualquer : ")
+tam=len(palavra)
+
+for x in palavra:
+ if x == "a":
+ qta = qta+1 # contador de letras a
+ if x == "m":
+ qtm = qtm+1 # contador de letras m
+ if x == "c":
+ qtc = qtc+1 # contador de letras c
+ if x == "p":
+ qtp = qtp+1 # contador de letras p
+ if x == "f":
+ qtf = qtf+1 # contador de letras f
+
+print("Tamanho da palavra digitada : ", tam)
+print("Qtde de letras 'a' em ", palavra, " é :", qta)
+print("Qtde de letras 'm' em ", palavra, " é :", qtm)
+print("Qtde de letras 'c' em ", palavra, " é :", qtc)
+print("Qtde de letras 'p' em ", palavra, " é :", qtp)
+print("Qtde de letras 'f' em ", palavra, " é :", qtf)
+
+Exercício (programa)
+Desenvolva um programa em Python que receba uma frase
+digitada pelo usuário.
+
+Mostre o tamanho dessa frase digitada
+
+Mostre quantas letras “a” e letras “i” tem nessa frase
+
+Motre a posição da letra “c” e da letra “a” nessa frase
+
+Modifique uma letra dessa frase digitada por ‘alt’ 
+
+# resolução sem uso do FOR
+
+palavra = input("Digite uma palavra qualquer : ")
+
+tam=len(palavra)
+posc=palavra.find("c")
+posa=palavra.find("a")
+palavranova=palavra.replace("n","alt")
+qta=palavra.count("a")
+qti=palavra.count("i")
+
+print("Tamanho da palavra digitada : ", tam)
+print("Qtde de letras 'a' em ", palavra, " é :", qta)
+print("Qtde de letras 'i' em ", palavra, " é :", qti)
+print("Posição da letra 'c' na frase : ", posc)
+print("Posição da letra 'a' na frase : ", posa)
+print("Palavra nova alterada ‘n’ por ‘alt’ : ", palavranova)
+
+Resolução com uso do FOR
+
+qta=0 
+qti=0
+
+palavra = input("Digite uma palavra qualquer : ")
+
+tam=len(palavra)
+posc=palavra.find("c")
+posa=palavra.find("a")
+palavranova=palavra.replace("n","alt")
+
+for x in palavra:
+ if x == "a":
+ qta = qta+1 # contador de letras a
+ if x == "i":
+ qti = qti+1 # contador de letras i
+
+print("Tamanho da palavra digitada : ", tam)
+print("Qtde de letras 'a' em ", palavra, " é :", qta)
+print("Qtde de letras 'i' em ", palavra, " é :", qti)
+print("Posição da letra 'c' na frase : ", posc)
+print("Posição da letra 'a' na frase : ", posa)
+print("Palavra nova alterada : ", palavranova)
+
+Desenvolva um programa em Python que receba duas
+frases digitadas pelo usuário.
+
+Mostre o tamanho dessas frases digitadas
+
+Mostre quantas letras “a” e letras “g” tem em cada frase
+
+Modifique as letras ‘a’ da 1a. frase digitada por ‘x1b2’ e as
+letras ‘c’ da 2a. frase por ‘tt3vy1’
+
+palavra1 = input("Digite uma palavra qualquer ..... ")
+palavra2 = input("Digite outra palavra qualquer ..... ")
+tam1=len(palavra1)
+tam2=len(palavra2)
+
+print("-"*70)
+print("Tamanho das palavras digitadas : 1a. palavra : ", tam1, " e a 2a. palavra : ", tam2)
+qta=palavra1.count("a")
+qtg=palavra1.count("g")
+
+print("Qtde de letras 'a' em ", palavra1, " é :", qta)
+print("Qtde de letras 'g' em ", palavra1, " é :", qtg)
+
+qta=palavra2.count("a")
+qtg=palavra2.count("g")
+
+print("Qtde de letras 'a' em ", palavra2, " é :", qta)
+print("Qtde de letras 'g' em ", palavra2, " é :", qtg)
+
+palavra1nova = palavra1.replace("a","x1b2")
+palavra2nova = palavra2.replace("c","tt3vy1")
+print("Palavra 1 alterada : ", palavra1nova)
+print("Palavra 2 alterada : ", palavra2nova)
+
+Desenvolva um programa em Python que receba duas
+frases digitadas pelo usuário.
+
+Mostre o tamanho dessas frases digitadas
+
+Mostre essas frases com tudo maiúsculo e depois com tudo
+minúsculo
+
+Modifique as letras ‘m’ da 1a. frase digitada por ‘yt23m’ e
+as letras ‘e’ da 2a. frase por ‘ut35x’ 
+
+palavra1 = input("Digite uma palavra qualquer ..... ")
+palavra2 = input("Digite outra palavra qualquer ..... ")
+tam1=len(palavra1)
+tam2=len(palavra2)
+
+print("-"*70)
+print("Tamanho das palavras digitadas : 1a. palavra : ", tam1, " e a 2a. palavra : ", tam2)
+print("Palavra 1 tudo maiúsculo : ", palavra1.upper())
+print("Palavra 2 tudo maiúsculo : ", palavra2.upper())
+print("Palavra 1 tudo minúsculo : ", palavra1.lower())
+print("Palavra 2 tudo minúsculo : ", palavra2.lower())
+
+palavra1nova = palavra1.replace("m","yt23m")
+palavra2nova = palavra2.replace("e","ut35x")
+print("Palavra 1 alterada : ", palavra1nova)
+print("Palavra 2 alterada : ", palavra2nova)

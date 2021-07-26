@@ -1,0 +1,103 @@
+Desenvolver um programa em python que
+apresente o cálculo de figuras geométricas
+(quadrado, retângulo e triângulo).
+
+# área do quadrado
+lado = int(input("Digite o valor do lado do quadrado : "))
+if lado>0:
+ print("A área do quadrado de lado ", lado, " é ", lado*lado)
+else:
+ print("O lado do quadrado digitado não é válido. Verifique")
+
+# área do triângulo
+base = int(input("Digite o valor da base do triângulo : "))
+altura = int(input("Digite o valor da altura do triângulo : "))
+if base>0 and altura>0:
+ print("A área do triângulo é ", (base*altura)/2)
+else:
+ print("Os valores informados não são válidos. Verifique“)
+
+Desenvolver um programa em python que lê um número digitado pelo
+usuário e apresente se esse número é par ou ímpar.
+
+num = int(input("Digite um número : "))
+
+if num%2 == 0: # (% = resto da divisão)
+ print("O número ", num, " é par")
+else:
+ print("O número ", num, " é ímpar")
+
+Desenvolver um programa em python para
+determinar se uma pessoa deve ou não pagar
+imposto. Considere que pagam imposto pessoas
+cujo salário é maior que R$ 1.200,00.
+
+salario = float(input("Digite seu salario: "))
+
+Programa que recebe 2 números digitados e mostra o maior deles
+
+print("Programa que mostra o maior número entre 2 digitados")
+print("")
+num1 = float(input("Digite o primeiro número : "))
+num2 = float(input("Digite o segundo número : "))
+if num1 > num2:
+ maior = num1
+else:
+ maior = num2
+print("O maior número digitado é : " , maior)
+
+if salario > 1.200:
+    print("Deve pagar imposto!")
+else:
+    print("Não deve pagar imposto!")
+
+Desenvolver um programa em python para
+decidir se um aluno foi ou não aprovado. Para
+ser aprovado, a média do aluno deve ser maior
+que 7 (utilize como base 2 notas).
+
+nota1 = int(input("Digite a primeira nota: "))
+nota2 = int(input("Digite a segunda nota: "))
+
+media = (nota1 + nota2) / 2 
+
+if media > 7:
+    print("Aprovado!")
+else: 
+    print("Reprovado :(")
+
+
+Programa que analisa o intervalo de um número
+digitado
+
+# uso do comando elif
+num1 = float(input("Digite um número entre 100 e 500 : "))
+
+if num1 >= 100 and num1 < 200:
+ print("O número digitado está entre 100 e 200")
+elif num1 >= 200 and num1 < 300:
+ print("O número digitado está entre 200 e 300")
+elif num1 >= 300 and num1 < 400:
+ print("O número digitado está entre 300 e 400")
+elif num1 >= 400 and num1 <= 500:
+ print("O número digitado está entre 400 e 500")
+else:
+ print("O número digitado não está entre 100 e 500")
+
+Programa que reajusta um valor conforme faixas de reajuste
+
+# uso do comando elif
+sal = float(input("Digite o valor do salário : "))
+
+if sal >= 0 and sal <= 1200:
+ sal=sal+(sal*0.15)
+elif sal > 1200 and sal <= 2000:
+ sal=sal+(sal*0.11)
+elif sal > 2000 and sal <= 3400:
+ sal=sal+(sal*0.08)
+elif sal > 3400 and sal <= 5000:
+ sal=sal+(sal*0.05)
+else:
+ sal=sal+(sal*0.02)
+print("Salário reajustado : ", sal)
+
